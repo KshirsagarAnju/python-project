@@ -1,0 +1,6 @@
+
+FROM ubuntu 
+RUN apt-get update
+RUN apt-get install python3 -y
+ADD hello-world.py /hello-world.py
+CMD [ "python3","hello-world.py" ]
